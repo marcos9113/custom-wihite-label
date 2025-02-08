@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="ir_cron_delete_unverified_users" model="ir.cron">
+        <field name="name">Users: Delete unverified Portal sign ups</field>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="model_id" ref="base.model_res_users"/>
+        <field name="code">model._delete_unverified_users()</field>
+        <field name="state">code</field>
+    </record>
+
+</odoo>

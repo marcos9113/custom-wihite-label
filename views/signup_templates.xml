@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="sh_signup_verfiy_template" inherit_id="sh_signup_email_approval.sh_signup_verfiy_template">
+            <xpath expr="//input[@id='code']/../.." position="after">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="alert alert-info">You must verify your account within 24 hours.</p>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

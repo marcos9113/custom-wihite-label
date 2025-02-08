@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="sh_signup_email_approval.sh_user_mail_template" model="mail.template">
+            <field name="name">Verification: Send by email</field>
+            <field name="subject">{{ object.company_id.name }} Verification Email</field>
+        </record>
+
+    </data>
+</odoo>
